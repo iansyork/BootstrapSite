@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body style="background-color:rgb(241, 196, 34)";>
+
+    <nav class="navbar navbar-expand-sm bg-warning">
+        <div class="container-fluid">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="/Users/ianyork/Documents/GitHub/BootstrapSite/home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Users/ianyork/Documents/GitHub/BootstrapSite/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Users/ianyork/Documents/GitHub/BootstrapSite/contactus.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container-fluid p-5 bg-danger text-white text-center mb-5">
+        <h1>Contact Skill.d</h1>
+        <p>Reach out to us with any needs or concerns</p> 
+      </div>
+
+
+
+<!-- Contact and radio button forms https://mdbootstrap.com/docs/b4/jquery/forms/contact/-->
+
+<p class="text-center w-responsive mx-auto text-white bg-danger mb-0">Submit the request below and we will reach out as soon as possible</p>
+        <div class="row">
+            <div class="col-md-12  mb-5 text-center bg-danger">
+                <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                    <div class="row">
+                        <div class="col-md-6 text-white ">
+                            <div class="md-form mb-2">
+                                <input type="text" id="name" name="name" class="form-control">
+                                <label for="name" class="">Your name</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6 text-white">
+                            <div class="md-form mb-2">
+                                <input type="text" id="email" name="email" class="form-control">
+                                <label for="email" class="">Your email</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 text-white">
+                            <div class="md-form mb-2">
+                                <input type="text" id="subject" name="subject" class="form-control">
+                                <label for="subject" class="">Subject</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+    
+                        <div class="col-md-12 text-white">
+    
+                            <div class="md-form">
+                                <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                                <label for="message">Your message</label>
+                            </div>
+    
+                        </div>
+                    </div>
+                </form>
+
+                <div id="feedback text">
+                    <h5 style="color: white"><strong>How did you get to know about us?</strong></h5>
+                    <div class="form-check-4 text-white">
+                        <input type="checkbox" class="form-check-input" name="channel[]" id="checkbox1" value="nl">
+                        <label for="checkbox1" class="form-check-label">Newsletter</label>
+                    </div>
+                
+                    <div class="form-check-4 text-white">
+                        <input type="checkbox" class="form-check-input" name="channel[]" id="checkbox2" value="ad">
+                        <label for="checkbox2" class="form-check-label">Advertisement</label>
+                    </div>
+                
+                    <div class="form-check-4 text-white">
+                        <input type="checkbox" class="form-check-input" name="channel[]" id="checkbox3" value="ot">
+                        <label for="checkbox3" class="form-check-label">Other</label>
+                    </div>
+                </div>
+                 
+                
+
+                <div class="text-center text-white">
+                    <a class="btn btn-warning text-white" onclick="document.getElementById('contact-form').submit();">Submit</a>
+                </div>
+                <div class="status"></div>
+            </div>
+        </div>
+    
+        <footer class="text-center text-white bg-danger">
+            <div class="text-center p-3 bg-danger">
+            © 2023 Copyright: Skill.d
+            </div>
+        </footer>
+
+ 
+</body>
+</html>
